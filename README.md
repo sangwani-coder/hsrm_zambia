@@ -1,6 +1,6 @@
-# hsrm_zambia
+# HSRM_ZAMBIA
 This was a course project for 2021 1st Semester ICU students.
-## Academic honety
+## Academic Honesty
 This repository is for educational purposes only. After I came across this project I decied to work on it for primarily testing my own understaing of SQL and PHP.
 Should future ICU students be tasked to work on this project. I encourage them to try and work on the project on their own and not copy and paste code from this repository.
 However, you can use thisrepository for reference.
@@ -15,7 +15,7 @@ d town is responding to the crisis. it focus primarily on the responses of healt
 - Write the database structure SQL->DDL commands in note pad, the exercise is 30 marks from the 100marks of the project.
 - You are then required to write the very commands on note pad then run them on XAMP or WAMP to create a database this process is 20 marks.
 1. Design a database schema with the name **HSRM_ZAMBIA**
-2. Designthe following tables in the hsrm_zambia schema:
+2. Design the following tables in the hsrm_zambia schema:
 	- province
 	- district
 	- town
