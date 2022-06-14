@@ -37,4 +37,5 @@ XAMPP is a free, open-source cross-platform and easy to install web server devel
 **Hypertest Preprocessor** (PHP) is a widely-used, opne source scripting language. PHP scrips are executed on the server. It is free to download and use.
 
 ## FILES
-[hsm_zambia_schema](./hsrm_zambia_schema.txt)
+[setup_hsm_zambia.txt](./setup_hsrm_zambia.txt): SQL->DDLcommand used to CREATE the database on phpMyAdmin.
+[hsrm_zambia_tables.txt](./hsrm_zambia_tables.txt): SQL->DML commands used to CREATE the specified tables in Task 1.

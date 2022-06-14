@@ -1,0 +1,4 @@
+-- Creates a MySQL server with:
+-- Database HSRM_ZAMBIA.
+
+CREATE DATABASE IF NOT EXISTS 'HSRM_ZAMBIA';

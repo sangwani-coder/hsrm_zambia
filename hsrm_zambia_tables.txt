@@ -1,0 +1,53 @@
+-- Create Tbales in HSRM_ZAMBIA database.
+-- SELECT database
+use HSRM_ZAMBIA;
+
+-- Create province table 1
+
+CREATE TABLE IF NOT EXISTS province(
+	p_id INT(15) NOT NULL AUTO_INCREMENT,
+	p_name VARCHAR(15) NOT NULL,
+    	PRIMARY KEY(p_id)
+);
+
+-- Create district table 2
+CREATE TABLE IF NOT EXISTS district(
+	d_id INT(15) NOT NULL AUTO_INCREMENT,
+	d_name VARCHAR(15) NOT NULL,
+    PRIMARY KEY(d_id)
+);
+
+-- Create towns table 3 
+CREATE TABLE IF NOT EXISTS town(
+	t_id INT(15) NOT NULL AUTO_INCREMENT,
+	t_name VARCHAR(15) NOT NULL,
+    	PRIMARY KEY(t_id)
+);
+
+-- Create assign_province table 4
+CREATE TABLE IF NOT EXISTS assign_province(
+	assign_id INT(15) NOT NULL AUTO_INCREMENT,
+	p_idd INT(15) NOT NULL,
+	d_idd INT(15) NOT NULL,
+	t_idd INT(15) NOT NULL,
+    	PRIMARY KEY(assign_id),
+	FOREIGN KEY (p_idd) REFERENCES province(p_id),
+	FOREIGN KEY (d_idd) REFERENCES district(d_id),
+	FOREIGN KEY (t_idd) REFERENCES town(t_id)
+);
+
+-- Create responses table 5
+CREATE TABLE IF NOT EXISTS response(
+	response_id INT(15) NOT NULL AUTO_INCREMENT,
+	citizen_name VARCHAR(150) NOT NULL,
+	citizen_phone VARCHAR(150) NOT NULL,
+	citizen_address VARCHAR(150) NOT NULL,
+	p_idd INT(15) NOT NULL,
+	d_idd INT(15) NOT NULL,
+	t_idd INT(15) NOT NULL,
+	date_time DATETIME,
+    	PRIMARY KEY(response_id),
+	FOREIGN KEY (p_idd) REFERENCES province(p_id),
+	FOREIGN KEY (d_idd) REFERENCES district(d_id),
+	FOREIGN KEY (t_idd) REFERENCES town(t_id)
+);
